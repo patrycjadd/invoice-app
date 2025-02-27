@@ -5,14 +5,14 @@ This application allows users to manage invoices.
 
 ## Screenshots
 
-### Invoice List
-![Invoice List](screenshots/lista-faktur.png)
+### Lista Faktur
+![alt text](image.png)
 
-### New Invoice
-![New Invoice](screenshots/nowa-faktura.png)
+### Nowa Faktura
+![alt text](image-1.png)
 
-### Invoice Details
-![Invoice Details](screenshots/szczegoly-faktury.png)
+### Szczegoly faktury
+![alt text](image-2.png)
 
 ## Screens
 * Invoice List
