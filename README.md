@@ -1,44 +1,44 @@
-# Faktury App
+# Invoice App
 
 ## Overview
 This application allows users to manage invoices.
 
 ## Screenshots
 
-### Lista Faktur
-![alt text](image.png)
+### Invoice List
+![Invoice List](screenshots/lista-faktur.png)
 
-### Nowa Faktura
-![alt text](image-1.png)
+### New Invoice
+![New Invoice](screenshots/nowa-faktura.png)
 
-### Szczegoly faktury
-![alt text](image-2.png)
+### Invoice Details
+![Invoice Details](screenshots/szczegoly-faktury.png)
 
-## Ekrany
-* Lista faktur
-  * kolumny:
-    * numer faktury,
-    * nazwa sprzedawcy,
-    * kwota faktury
-  * filtry:
-    * sprzedawca: sprzedawcę wybieramy z rejestru sprzedawców na podstawie (drop down)  
-* Dodawanie faktury
-  * pola:
-    * data wystawienia faktury
-    * numer faktury,
-    * sprzedawca wybór z rejestru sprzedawców, po wybraniu widzimy pełne dane sprzedawcy (id, nazwa, adres)
-    * kwota faktury
-  * akcje:
-    * zapisz (wysyła nową fakturę na backend)
-    * anuluj (zamyka okno bez zapisywania)
-* Podgląd faktury (prezentacja faktury readonly)
-  * pola:
-    * data wystawienia faktury
-    * numer faktury,
-    * sprzedawca wybór z rejestru sprzedawców,
-    * kwota faktury
-  * akcje
-    * zamknij (zamyka okno bez zapisywania)
+## Screens
+* Invoice List
+  * Columns:
+    * Invoice number,
+    * Seller name,
+    * Invoice amount
+  * Filters:
+    * Seller: select the seller from the seller registry (drop down)
+* Adding an Invoice
+  * Fields:
+    * Invoice issue date
+    * Invoice number,
+    * Seller: select from the seller registry, after selection, full seller details are displayed (id, name, address)
+    * Invoice amount
+  * Actions:
+    * Save (sends the new invoice to the backend)
+    * Cancel (closes the window without saving)
+* Invoice Preview (readonly presentation of the invoice)
+  * Fields:
+    * Invoice issue date
+    * Invoice number,
+    * Seller: select from the seller registry,
+    * Invoice amount
+  * Actions:
+    * Close (closes the window without saving)
 
 ## Installation
 <!-- ...existing code... -->
