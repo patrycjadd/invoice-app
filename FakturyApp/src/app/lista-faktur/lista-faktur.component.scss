@@ -1,0 +1,34 @@
+.table {
+  width: 100%;
+}
+
+.mat-row .mat-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-row:hover .mat-cell {
+  border-color: currentColor;
+}
+
+.lista-faktur {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.button--add-fakture {
+  margin-top: 10px;
+  height: 40px;
+}
+
+.footer {
+  display: flex;
+  place-content: space-between;
+}
+
+.select--sellers {
+  margin-top: 5px;
+  height: 30px;
+}

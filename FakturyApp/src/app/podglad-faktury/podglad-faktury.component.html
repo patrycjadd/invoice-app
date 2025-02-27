@@ -1,0 +1,18 @@
+<mat-card class ="faktura--szczegoly">
+
+  <h1>Faktura - szczegoly</h1>
+
+  <div class="faktura--szczegoly_detal"><span class="detal-span">Numer faktury:</span><span>{{faktura.numer}}</span></div>
+  <div class="faktura--szczegoly_detal"><span class="detal-span"> Data wystawienia </span><span>{{faktura.dataWystawienia | date: 'dd/MM/yyyy'}}</span></div>
+  <div class="faktura--szczegoly_detal"><span class="detal-span">Sprzedawca</span><span> {{faktura.sprzedawca.nazwa}}, {{faktura.sprzedawca.adres}}</span></div>
+  <div class="faktura--szczegoly_detal"><span class="detal-span">Kwota faktury </span><span>{{faktura.kwotaFaktury}} PLN</span></div>
+
+  <button
+    color="primary"
+    class="button--zamknij"
+    mat-flat-button
+    (click)="zamknij()">
+    Zamknij
+  </button>
+
+</mat-card>

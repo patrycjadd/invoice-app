@@ -1,0 +1,51 @@
+<mat-card class="card--sprzedawca">
+  <h1>Sprzedawca</h1>
+
+  <div>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" novalidate>
+      <mat-form-field>
+        <mat-label>Sprzedawca</mat-label>
+        <mat-select
+          (selectionChange)="onChanged($event.value)">
+          <mat-option *ngFor="let sprzedawca of sprzedawcy" [value]="sprzedawca">
+            {{sprzedawca.nazwa}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Id sprzedawcy</mat-label>
+        <input matInput formControlName="id">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Nazwa sprzedawcy</mat-label>
+        <input matInput formControlName="nazwa">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Adres sprzedawcy</mat-label>
+        <input matInput formControlName="adres">
+      </mat-form-field>
+
+      <div class="footer">
+        <button
+          color="primary"
+          class="button--zapisz-fakture"
+          mat-flat-button
+          (click)="anuluj()">
+          Anuluj i zamknij
+        </button>
+
+        <button
+          color="primary"
+          mat-flat-button
+          type="submit"
+          [disabled]="!czyMozliwaEdycja">
+          Zapisz i zamknij
+        </button>
+      </div>
+    </form>
+
+  </div>
+</mat-card>
