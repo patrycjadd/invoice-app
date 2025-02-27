@@ -9,7 +9,10 @@ This application allows users to manage invoices.
 ![alt text](image.png)
 
 ### Nowa Faktura
-![Nowa Faktura](screenshots/nowa-faktura.png)
+![alt text](image-1.png)
+
+### Szczegoly faktury
+![alt text](image-2.png)
 
 ## Ekrany
 * Lista faktur
