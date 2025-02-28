@@ -19,6 +19,8 @@ import {SprzedawcaComponent} from './sprzedawca/sprzedawca.component';
 import {HasRoleDirective} from './autoryzacja/has-role.directive';
 import { MatIconModule } from '@angular/material/icon';
 import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
     PodgladFakturyComponent,
     SprzedawcaComponent,
     HasRoleDirective,
-    PodsumowanieComponent
+    PodsumowanieComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
