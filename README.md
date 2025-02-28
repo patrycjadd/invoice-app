@@ -15,7 +15,7 @@ This application allows users to manage invoices.
 ![alt text](image-2.png)
 
 ## Video
-![Invoice App Demo](./video.mp4)
+![Invoice App Demo](./video_compressed.mp4)
 
 ## Screens
 * Invoice List
