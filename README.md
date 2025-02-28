@@ -14,7 +14,8 @@ This application allows users to manage invoices.
 ### Szczegoly faktury
 ![alt text](image-2.png)
 
-[text](Nagranie z ekranu 2025-02-28 o 07.06.43.mov)
+## Video
+![Invoice App Demo](./Nagranie z ekranu 2025-02-28 o 07.06.43.mov)
 
 ## Screens
 * Invoice List
