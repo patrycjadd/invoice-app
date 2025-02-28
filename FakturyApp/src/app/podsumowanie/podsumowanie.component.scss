@@ -1,0 +1,18 @@
+.podsumowanie {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+  background-color: #e6e6fa; // light purple background color
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.podsumowanie--detal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.detal-span {
+  font-weight: bold;
+}

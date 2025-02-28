@@ -59,6 +59,24 @@ export class ListaFakturComponent implements OnInit {
     console.log('Viewing details for:', element);
   }
 
+  get podatekNalezny(): number {
+    return parseFloat(this._fakturyLista
+      .filter(faktura => faktura.typ === 'przychodowa')
+      .reduce((sum, faktura) => sum + faktura.kwotaFaktury * 0.23, 0)
+      .toFixed(2));
+  }
+
+  get podatekNaliczony(): number {
+    return parseFloat(this._fakturyLista
+      .filter(faktura => faktura.typ === 'kosztowa')
+      .reduce((sum, faktura) => sum + faktura.kwotaFaktury * 0.23, 0)
+      .toFixed(2));
+  }
+
+  get vatDoZaplaty(): number {
+    return parseFloat((this.podatekNalezny - this.podatekNaliczony).toFixed(2));
+  }
+
   get fakturyLista(): Array<Faktura> {
     return this._fakturyLista;
   }

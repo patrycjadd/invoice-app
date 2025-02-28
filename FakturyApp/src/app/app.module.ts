@@ -18,6 +18,7 @@ import {PodgladFakturyComponent} from './podglad-faktury/podglad-faktury.compone
 import {SprzedawcaComponent} from './sprzedawca/sprzedawca.component';
 import {HasRoleDirective} from './autoryzacja/has-role.directive';
 import { MatIconModule } from '@angular/material/icon';
+import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatIconModule } from '@angular/material/icon';
     NowaFakturaComponent,
     PodgladFakturyComponent,
     SprzedawcaComponent,
-    HasRoleDirective
+    HasRoleDirective,
+    PodsumowanieComponent
   ],
   imports: [
     BrowserModule,
