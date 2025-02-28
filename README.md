@@ -15,10 +15,7 @@ This application allows users to manage invoices.
 ![alt text](image-2.png)
 
 ## Video
-<video width="600" controls>
-  <source src="./video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Invoice App Demo](./video.gif)
 
 ## Screens
 * Invoice List
