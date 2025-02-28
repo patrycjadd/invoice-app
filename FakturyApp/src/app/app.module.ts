@@ -21,6 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     SprzedawcaComponent,
     HasRoleDirective,
     PodsumowanieComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

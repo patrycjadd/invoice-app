@@ -6,7 +6,7 @@ This application allows users to manage invoices.
 ## Screenshots
 
 ### Lista Faktur
-![alt text](img1.png)
+![alt text](./Zrzut%20ekranu%202025-02-28%20o%2009.16.17.png)
 
 ### Nowa Faktura
 ![alt text](image-1.png)
