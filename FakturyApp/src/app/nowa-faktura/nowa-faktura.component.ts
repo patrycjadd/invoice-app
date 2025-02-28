@@ -20,7 +20,8 @@ export class NowaFakturaComponent implements OnInit {
     'dataWystawienia': new FormControl('', Validators.required),
     'id': new FormControl('', Validators.required),
     'nazwa': new FormControl('', Validators.required),
-    'adres': new FormControl('', Validators.required)
+    'adres': new FormControl('', Validators.required),
+    'typ': new FormControl('', Validators.required)
   }, { validators: this.allFieldsFilledValidator });
 
   constructor(private router: Router, private formBuilder: FormBuilder) {}
@@ -65,7 +66,8 @@ export class NowaFakturaComponent implements OnInit {
       numer: values.numer,
       dataWystawienia: values.dataWystawienia,
       sprzedawca: {id: values.id, nazwa: values.nazwa, adres: values.adres},
-      kwotaFaktury: values.kwotaFaktury
+      kwotaFaktury: values.kwotaFaktury,
+      typ: values.typ
     };
   }
 

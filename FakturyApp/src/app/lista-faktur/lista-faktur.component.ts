@@ -22,8 +22,9 @@ export class ListaFakturComponent implements OnInit {
   private _fakturyLista = JSON.parse(<string>localStorage.getItem(FAKTURY_LOCAL_STORAGE_KEY));
   private _dataSource = this._fakturyLista;
   private _sprzedawcy = SPRZEDAWCY
-  private _displayedColumns = COLUMNS;
+  private _displayedColumns = ['numerFaktury', 'nazwaSprzedawcy', 'kwotaFaktury', 'typFaktury', 'details'];
   readonly Role = Role;
+  selectedSprzedawca: any;
 
   constructor(private router: Router) {}
 
@@ -37,8 +38,16 @@ export class ListaFakturComponent implements OnInit {
     this._dataSource = this._fakturyLista.filter(am => am.sprzedawca.nazwa === value.nazwa);
   }
 
-  clearFilter(): void {
+  clearFilter(event: Event): void {
+    event.stopPropagation();
+    this.selectedSprzedawca = null;
     this._dataSource = this._fakturyLista;
+  }
+
+  clearAllFaktury(): void {
+    this._fakturyLista = [];
+    this._dataSource = [];
+    localStorage.setItem(FAKTURY_LOCAL_STORAGE_KEY, JSON.stringify(this._fakturyLista));
   }
 
   clickRow(row: any): void {

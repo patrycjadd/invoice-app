@@ -10,15 +10,19 @@
 
 .mat-row:hover .mat-cell {
   border-color: currentColor;
+  background-color: #f0f0f0; // light gray background color on hover
 }
 
 .lista-faktur {
   width: 60%;
   margin-left: 20%;
   margin-top: 5%;
+  background-color: #e6e6fa; // light purple background color
+  padding: 16px;
+  border-radius: 8px;
 }
 
-.button--add-fakture {
+.button--add-fakture, .button--clear-faktury {
   margin-top: 10px;
   height: 40px;
 }
