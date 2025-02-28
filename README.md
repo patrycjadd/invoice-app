@@ -44,7 +44,39 @@ This application allows users to manage invoices.
     * Close (closes the window without saving)
 
 ## Installation
-<!-- ...existing code... -->
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/faktury_app-main.git
+   cd faktury_app-main
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Run the application:
+   ```sh
+   ng serve
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:4200
+   ```
+
+## Configuration
+
+1. Update the `src/environments/environment.ts` file with your configuration settings.
+
+2. Configure the local storage keys in `src/app/common/constants.ts`:
+   ```typescript
+   export const FAKTURY_LOCAL_STORAGE_KEY = 'faktury';
+   export const SPRZEDAWCY_LOCAL_STORAGE_KEY = 'sprzedawcy';
+   export const URL_HOME = '/home';
+   export const URL_FAKTURA = '/faktura';
+   ```
 
 ## Usage
 <!-- ...existing code... -->
